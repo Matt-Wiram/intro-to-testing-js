@@ -3,11 +3,14 @@
     return "Hello, World!";
 }
 sayHello = (str) => {
-    if (str === undefined) {
+    let edges = ['boolean', 'number', 'null', 'object', 'function']
+    let truthy = edges.every((x) => typeof str === x)
+    if (truthy || str === undefined) {
         return "Hello, World!"
     } else {
     return "Hello, " + str + "!"}
-}
+    }
+
 isFive = (num) => {
     if (parseInt(num) === 5) {
         return true
@@ -24,9 +27,9 @@ isEven = (num) => {
 isVowel = (str) => {
     let reg = /[aeiou]/i
     if (str !== undefined) {
-    if (str.length === 1) {
+      if (str.length === 1) {
     return reg.test(str) }
-    else {
+      else {
         return false
     }
     }
