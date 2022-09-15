@@ -33,4 +33,18 @@ describe('sayHello', function () {
     it('should return "Hello, World!"', function () {
         expect(sayHello()).toBe("Hello, World!")
     });
-})
+});
+describe("isFive", function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function')
+    });
+    it('should return a boolean', function () {
+        expect(typeof isFive()).toBe("boolean")
+    });
+    it('should return true when 5 is passed in as the argument', function () {
+        expect(isFive(5)).toBe(true)
+    });
+    it('should should return 5 when "5" is passed in as the argument', function () {
+        expect(isFive("5")).toBe(true)
+    });
+}) 

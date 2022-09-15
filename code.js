@@ -8,3 +8,11 @@ sayHello = (str) => {
     } else {
     return "Hello, " + str + "!"}
 }
+isFive = (num) => {
+    if (parseInt(num) === 5) {
+        return true
+    }
+    else {
+        return false
+    }
+}
