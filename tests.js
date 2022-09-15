@@ -30,4 +30,7 @@ describe('sayHello', function () {
     it('should never returned undefined', function () {
         expect(sayHello("Pat")).not.toBe(undefined)
     });
+    it('should return "Hello, World!"', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
 })

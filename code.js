@@ -3,5 +3,8 @@
     return "Hello, World!";
 }
 sayHello = (str) => {
-    return "Hello, " + str + "!"
+    if (str === undefined) {
+        return "Hello, World!"
+    } else {
+    return "Hello, " + str + "!"}
 }
