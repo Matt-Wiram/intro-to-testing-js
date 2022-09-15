@@ -34,3 +34,21 @@ isVowel = (str) => {
         return false
     }
 }
+
+add = (a, b) => {
+if (a !== undefined || b !== undefined) {
+    a = parseFloat(a)
+    b = parseFloat(b)
+    if (isNaN(a) || isNaN(b)) {
+        return NaN
+    }
+
+    else {
+        return a + b
+    }
+}
+else {
+    return NaN
+}
+
+}
