@@ -20,3 +20,17 @@ isFive = (num) => {
 isEven = (num) => {
     return parseInt(num) % 2 === 0
 }
+
+isVowel = (str) => {
+    let reg = /[aeiou]/i
+    if (str !== undefined) {
+    if (str.length === 1) {
+    return reg.test(str) }
+    else {
+        return false
+    }
+    }
+    else {
+        return false
+    }
+}
