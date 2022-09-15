@@ -16,3 +16,7 @@ isFive = (num) => {
         return false
     }
 }
+
+isEven = (num) => {
+    return parseInt(num) % 2 === 0
+}
